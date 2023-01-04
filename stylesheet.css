@@ -223,6 +223,19 @@ footer .socials a>img:hover {
   
 }
 
+
+/* Adjusting navigation and log for lower mobile screens */
+@media (max-width: 347px){
+  nav a>img{
+    height: 1em;
+    width: 3.7em;
+  }
+
+  ul li>a{
+    font-size: 9px !important;
+  }
+}
+
 /* large tablet screens and laptop screens ranging from 768px - 1100px */
 
 @media (768px <= width <= 1050px){
