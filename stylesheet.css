@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  /* Primary color */
+  --very-dark-blue:  hsl(243, 87%, 12%);
+  --desaturated-blue:  hsl(238, 22%, 44%);
+
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /*  */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-grey: hsl(0, 0%, 75%);
+}
+
+/* FONTS */
+/* font family */
+.ff-raleway{
+  font-family: 'Raleway';
+}
+
+.ff-open-sans{
+  font-family: "Open Sans" !important;
+}
+
+/* NAVIGATION*/
+/* navigation link */
+a.text-very-dark-blue{
+  color: var(--very-dark-blue);
+}
+
+/* navbar-brand */
+nav a>img{
+  height: 1.7em;
+  width: 5.5em;
+}
+
+/* section I */
+section.I .image-container img{
+  height: 100%;
+  width: 100%;
+}
+
+section.I.bg-image-md-block{
+  background: url('images/illustration-1.svg') center right 5em no-repeat;
+  background-size: 44%;
+}
+
+section.I.py-md-5{
+  padding-top: 7em !important;
+  padding-bottom: 7.5em !important;
+}
+
+section.I form input.email{
+  border: 1px solid var(--very-dark-blue) !important;
+  padding: 1em !important;
+}
+
+section.I form input.bg-primary{
+  background-color: var(--bright-blue) !important;
+  border: 1px solid var(--bright-blue) !important;
+}
+
+section.I form input.bg-primary:hover{
+  opacity: 0.7;
+}
+
+/* section II */
+section.II.bg-image-md-block{
+  background: url('images/illustration-2.svg') center right 5em no-repeat, url('images/bg-curve-desktop.svg') center center no-repeat;
+  background-size: 37%, cover;
+}
+
+section.II .text-container h2{
+  font-size: 38px !important;
+}
+
+section.II .text-container p{
+  font-size: 15.5px !important;
+}
+
+section.II .text-container .link.border-bottom{
+  border-bottom: 1px solid var(--moderate-cyan) !important;
+  width: 170px;
+}
+
+section.II .text-container .link>a{
+  color: var(--moderate-cyan);
+}
+
+section.II .card.w-75 {
+  max-width: 52% !important;
+}
+
+section.II .card p{
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+section.II .avatar img{
+  width: 50px;
+  height: 50px;
+}
+
+section.II .avatar-name h6.fs-6{
+  font-size: 12.5px !important;
+}
+
+section.II .avatar-name small.fs-6{
+  font-size: 8.8px !important;
+}
+
+/* section III */
+section.III.p-5{
+  background: var(--desaturated-blue) !important;
+  padding-left: 2.6em !important;
+  padding-right: 2.6em !important;
+}
+
+section.III .text-container{
+  width: 65% !important;
+}
+
+section.III form input#email{
+  border: 1px solid var(--light-grey)
+}
+section.III form input.bg-primary{
+  background-color: var(--bright-blue) !important;
+  border: 1px solid var(--bright-blue) !important;
+}
+
+section.III form input.submit.bg-primary:hover{
+  opacity: 70% ;
+}
+
+/* footer */
+footer.bg-dark-blue.py-md-5{
+  background-color: var(--very-dark-blue);
+  padding-top: 7em !important;
+  padding-bottom: 7em !important;
+}
+
+footer .socials a>img {
+  width: 45px;
+  height: 45px;
+}
+
+footer .socials a>img:hover {
+  color:var(--bright-blue);
+}
+
+/* mobile and Tablet screens max-width: 767px */
+@media(max-width: 767px){
+
+  /* navigation */
+  ul li>a{
+    font-size: 11px !important;
+  }
+
+  /* section I */
+  section.I.py-4.bg-image-none{
+    background: none;
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+  }
+
+  section.I h2.fs-1{
+    font-size: 25px !important;
+    font-weight: 800 !important;
+    color: var(--very-dark-blue) !important;
+  }
+
+  section.I .sub-text-container p.fs-5{
+    font-size: 15px !important;
+    color: var(--very-dark-blue) !important;
+    font-weight: 600 !important;
+  }
+
+  section.I form input.email{
+    width: 100% !important;
+  }
+
+  /* section II */
+  section.II.bg-image-none{
+    background: none, url('images/bg-curve-mobile.svg')center top no-repeat;
+    background-size: cover;
+  }
+
+  section.II .text-container h2.fs-1.fw-bolder{
+    font-size: 19px !important;
+    font-weight: 800 !important;
+  }
+  
+
+  section.II .text-container p.w-75{
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+
+  section.II .card.w-75 {
+    min-width: 100% !important;
+  }
+
+
+  /* section III */
+  section.III.p-5{
+    padding: 2.3em !important;
+  }
+
+  section.III .row.py-3.py-md-5{
+    padding: 1em !important;
+  }
+  section.III .text-container{
+    width: 100% !important;
+  }
+
+  section.III p.fs-6{
+    font-size: 13px !important;
+  }
+  
+}
+
+/* large tablet screens and laptop screens ranging from 768px - 1100px */
+
+@media (768px <= width <= 1050px){
+
+  nav.p-md-5{
+    padding-left: 2.2em !important;
+    padding-right: 2.2em !important;
+  }
+
+  /* section I */
+  section.I.py-4.bg-image-none{
+    padding: 2.3em 2.2em !important;
+  }
+
+  section.I.bg-image-md-block{
+  background: url('images/illustration-1.svg') center right 2.5em no-repeat;
+  background-size: 42%;
+  }
+
+  section.I h2.fs-1{
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    color: var(--very-dark-blue) !important;
+  }
+
+  section.I .sub-text-container p.fs-5{
+    font-size: 13px !important;
+    color: var(--very-dark-blue) !important;
+    font-weight: 600 !important;
+  }
+
+  section.I form input.email.p-2{
+    height: 40px;
+    font-size: 13px !important;
+  }
+
+  section.I form input.submit.py-2{
+    height: 40px;
+    font-size: 13px !important;
+    text-align: center !important;
+    margin-left: 0px !important;
+  }
+
+
+
+  /* section II*/
+  section.II.bg-image-md-block.py-md-5.mt-5{
+    background: url('images/illustration-2.svg') center right 2.3em no-repeat, url('images/bg-curve-desktop.svg') center center no-repeat;
+    background-size: 44%, cover;
+    padding-left: 2.3em !important;
+    padding-right: 2.3em !important;
+    margin-top: 2em !important;
+  }
+
+  section.II .text-container h2.fs-1.fw-bolder{
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    color: var(--very-dark-blue) !important;
+  }
+
+  section.II .text-container p.w-75{
+    width: 100% !important;
+    font-size: 10px !important;
+  }
+
+  section.II .text-container .link.border-bottom{
+    border-bottom: 1px solid var(--moderate-cyan) !important;
+    width: 103px;
+  }
+
+  section.II .text-container .link>a{
+    color: var(--moderate-cyan);
+    font-size: 9px !important;
+    
+  }
+  
+  section.II .card.w-75 {
+    max-width: 75% !important;
+    margin-top: 2px !important;
+  }
+  
+  section.II .card p{
+    font-size: 7px !important;
+    font-weight: 600 !important;
+  }
+  
+  section.II .avatar img{
+    width: 37px;
+    height: 37px;
+  }
+  
+  section.II .avatar-name h6.fs-6{
+    font-size: 9px !important;
+  }
+  
+  section.II .avatar-name small.fs-6{
+    font-size: 7px !important;
+  }
+
+  /* section III */
+  section.III.p-5{
+    padding-left: 2.3em !important;
+    padding-right: 2.3em;
+  }
+  
+  section.III .text-container{
+    width: 100% !important;
+  }
+
+  section.III .text-container h3{
+    font-size: 20px !important;
+  }
+
+  section.III .row.py-3.py-md-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  section.III p.fs-6{
+    font-size: 11px !important;
+  }
+
+  /* footer */
+  footer.px-md-5.py-md-5{
+    padding: 3em 2.3em !important;
+  }
+
+  footer .logo{
+    width: 3em;
+    height: 2em;
+  }
+
+  footer .phone-no.py-2{
+    padding-top:1.2em !important;
+    padding-bottom: 0 !important;
+  }
+
+  footer .phone-no small{
+    font-size: 12px !important;
+  }
+
+  footer .email small{
+    font-size: 12px !important;
+  }
+
+  footer ul li>a.fs-6{
+    font-size: 12px !important;
+  }
+
+  footer .socials a>img {
+    width: 37px;
+    height: 37px;
+  }
+
+
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-md p-3 p-md-5">
+    
+    <div class="container-fluid  d-flex space-between">
+
+      <!-- navbar-brand -->
+      <a href="#" class="navbar-brand">
+        <img src="images/logo.svg" alt="">
+      </a>
+
+      <ul class="navbar list-unstyled  p-0 m-0">
+        <li class="nav-item list-style-none ms-4">
+          <a href="#" class="nav-link text-decoration-none text-very-dark-blue ff-raleway">Features</a>
+        </li>
+        <li class="nav-item list-style-0 ms-4">
+          <a href="#" class="nav-link text-decoration-none text-very-dark-blue  ff-raleway">Team</a>
+        </li>
+        <li class="nav-item style-none ms-4">
+          <a href="#" class="nav-link text-decoration-none text-very-dark-blue  ff-raleway">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- section I -->
+  <section class="I px-3 px-md-5 py-4 py-md-5 bg-image-none bg-image-md-block ">
+    <div class="container-fluid pb-0 pb-md-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="image-container d-block d-md-none py-4">
+            <img src="images/illustration-1.svg" alt="section one illustration" class="d-block d-md-none">
+          </div>
+    
+          <div class="text-container text-center text-md-start">
+            <div class="sub-text-container">
+              <h2 class="ff-raleway fw-bolder fs-1 py-1 lh-base">
+                All your files in one secure location, accessible anywhere.
+              </h2>
+              <p class="ff-open-sans py-2 fs-5 lh-base">
+                Fylo stores your most important files in one secure location. 
+                Access them wherever you need, share and collaborate with friends, 
+                family, and co-workers.
+              </p>
+            </div>
+            <form action="#" class="d-block d-md-flex text-center">
+              <div class="container-fluid">
+                <div class="row">
+                  
+                  <div class="col-12 col-md-7 p-0 mb-3 mb-md-0">
+                    <label class="w-100" for="email">
+                      <input class="email ff-open-sans w-100 rounded" type="email" id="customer-email" required="required" placeholder="Enter your email...">
+                    </label> 
+                  </div>
+                  
+                  <div class="col-12 col-md-4 p-0">
+                    <input class="ff-open-sans py-3 w-100  ms-0 ms-md-3 rounded text-light bg-primary" type="submit" value="Get Started">
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+      
+      </div>
+     
+    </div>
+    
+  </section>
+
+  <!-- section II -->
+  <section class="II px-3 px-md-5 py-4 py-md-5 mt-5 bg-image-none bg-image-md-block">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 d-block d-md-none">
+         <div class="image-container">
+            <img src="images/illustration-2.svg" alt="illustration section 2" class="w-100 h-100">
+         </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="text-container py-5">
+            <h2 class="ff-raleway fw-bolder fs-1 py-4 mb-0 text-center text-md-start">
+              Stay productive, wherever you are
+            </h2>
+
+            <p class="ff-open-sans py-1 lh-base fs-6 mb-2 w-75">
+              Never let location be an issue when accessing your files. Fylo has you 
+              covered for all of your file storage needs.
+            </p>
+            <p class="ff-open-sans pb-2 lh-base fs-6 w-75 mb-3 mb-md-1">
+              Securely share files and folders with friends, family and colleagues for 
+              live collaboration. No email attachments required!
+            </p>
+
+            <div class="link border-bottom pb-1 mb-4 mx-auto ms-md-0">
+              
+              <a class="ff-open-sans text-decoration-none text-moderate-cyan " href="#">See how Fylo works</a>
+              <img src="images/icon-arrow.svg" alt="">
+            </div>
+
+            <div class="card mt-5 p-4 w-75 mx-auto ms-md-0">
+              <div class="quote">
+                <img src="images/icon-quotes.svg" alt="quote image">
+              </div>
+              <p class=" ff-open-sans fw-bold">
+                Fylo has improved our team productivity by an order of magnitude. Since 
+                making the switch our team has become a well-oiled collaboration machine.
+              </p>
+              <div class="avatar d-flex">
+                <img class="rounded-circle" src="images/avatar-testimonial.jpg" alt="">
+                <div class="avatar-name ms-2 align-self-center">
+                  <h6 class="fw-bolder mb-0 fs-6">Kyle Burton</h6>
+                  <small class="fs-6">Founder & CEO, Huddle</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- section III -->
+  <section class="III p-5 bg-desaturated-blue">
+    <div class="container-fluid">
+      <div class="row py-3 py-md-5">
+        <div class="col-12 col-md-6">
+          <div class="text-container text-light text-center text-md-start w-75">
+            <h3 class="ff-open-sans pb-2 pb-md-0">
+              Get early access today
+            </h3>
+            <p class="ff-open-sans fs-6 pb-3 pb-md-0 lh-base">
+              It only takes a minute to sign up and our free starter tier is extremely generous. 
+              If you have any questions, our support team would be happy to help you.
+            </p>
+          </div>
+        </div>
+        <form class="col-md-6 px-0" action="#">
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-12 p-0 mb-2">
+                <label class="w-100 " for="emails">
+                  <input class="w-100 border rounded px-3 py-3" type="email" name="email" id="emails" required="required" placeholder="examples@email.com">
+                </label>
+              </div>
+
+              <div class="col-md-6 col-lg-4 p-0">
+                <input class="w-100 rounded border fs-6 py-3 bg-primary text-light" type="submit" value="Get Started For Free">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-dark-blue px-3 py-5 px-md-5 py-md-5">
+    <div class="container-fluid d-block d-md-flex justify-content-between">
+
+      <div class="first-container pb-4">
+        <div class="logo pb-3 pb-md-0">
+          <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.014.03h93.96v48.29H.015z"/></defs><g fill="none" fill-rule="evenodd"><path d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z" fill="#fff"/><g transform="translate(72)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z" fill="#fff" mask="url(#b)"/></g></g></svg>
+        </div>
+
+        <div class="phone-no py-2">
+          <img class="me-3" src="images/icon-phone.svg" alt="Phone number">
+          <small class="m-0 ff-open-sans text-light">Phone: +1-543-123-4567</small>
+        </div>
+        <div class="email ">
+          <img class=" me-3 " src="images/icon-email.svg" alt="email"> 
+          <small class="m-0 ff-open-sans text-light"> example@fylo.com
+          </small>
+          
+        </div>
+      </div>
+
+      <ul class="footer-nav list-unstyled py-4 py-md-0">
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">About Us</a></li>
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">Jobs</a></li>
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">Press</a></li>
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">Blog</a></li>
+      </ul>
+
+      <ul class="footer-nav list-unstyled pb-4 py-md-0">
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">Contact Us</a></li>
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">Terms</a></li>
+        <li><a class="text-decoration-none text-light ff-open-sans fs-6" href="#">Privacy</a></li>
+      </ul>
+
+      <div class="socials text-center text-md-start">
+        <a class="text-decoration-none" href="#"><img  src="images/facebook.svg" alt=""></a>
+
+        <a class="text-decoration-none" href="#"><img class="ms-2" src="images/twitter.svg" alt="facebook_link"></a>
+
+        <a class="text-decoration-none" href="#"><img class="ms-2" src="images/instagram.svg" alt="facebook_link"></a>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Chukwubuikem4</a>.
+    </p>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
+</body>
+</html>
